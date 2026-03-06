@@ -1,0 +1,9 @@
+apiVersion: objectstorage.k8s.io/v1alpha1
+kind: BucketClaim
+metadata:
+  name: forrester-bucket
+spec:
+  bucketClassName: cosi-nutanix-nkp
+# existingBucketName: nimal-demo
+  protocols:
+    - s3
