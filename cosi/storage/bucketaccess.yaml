@@ -2,6 +2,7 @@ apiVersion: objectstorage.k8s.io/v1alpha1
 kind: BucketAccess
 metadata:
   name: forrester-bucketaccess
+  namespace: default
 spec:
   bucketAccessClassName: cosi-nutanix-nkp
   bucketClaimName: forrester-bucket
