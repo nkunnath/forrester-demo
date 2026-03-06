@@ -1,0 +1,9 @@
+apiVersion: objectstorage.k8s.io/v1alpha1
+kind: BucketClaim
+metadata:
+  name: devuser-a
+  namespace: devuser-a
+spec:
+  bucketClassName: cosi-nutanix-nkp
+  protocols:
+    - s3
