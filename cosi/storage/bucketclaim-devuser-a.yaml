@@ -1,3 +1,13 @@
+### Example for a dev user with a separate namespace and bucket claim
+
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: devuser-a
+  labels:
+    team: forrester-demo
+    env: development
+---
 apiVersion: objectstorage.k8s.io/v1alpha1
 kind: BucketClaim
 metadata:
