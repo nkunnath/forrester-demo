@@ -5,7 +5,7 @@ metadata:
   namespace: kommander-flux
 spec:
   interval: 5m
-  path: "./infrastructure"
+  path: "./cosi/infrastructure"
   prune: true
   sourceRef:
     kind: GitRepository
