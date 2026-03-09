@@ -1,0 +1,12 @@
+cluster_name = "PHX-MKT238"  # Prism Element cluster name
+user         = "admin"
+password     = ""            # Update Prism Central password
+endpoint     = "10.42.240.7" # Prism Central endpoint
+object_store_name = "obj3"
+domain_name = "prism-central.cluster.local"
+cluster_uuid = "00064b0b-ece1-e973-0000-00000001ac4c"
+public_network_reference = "708525f1-f6f8-4da4-8985-e7410c4aebde"
+storage_network_reference = "5c1b4fce-0f51-4dd7-81a2-9e818f676df7"
+public_network_ip = ["10.42.238.190","10.42.238.191"]
+storage_network_dns_ip = "10.42.238.23"
+storage_network_vip = "10.42.238.24"
