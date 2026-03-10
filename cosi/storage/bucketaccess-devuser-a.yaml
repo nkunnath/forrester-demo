@@ -1,0 +1,10 @@
+apiVersion: objectstorage.k8s.io/v1alpha1
+kind: BucketAccess
+metadata:
+  name: devuser-a-bucketaccess
+  namespace: default
+spec:
+  bucketAccessClassName: cosi-nutanix-nkp
+  bucketClaimName: devuser-a
+  credentialsSecretName: devuser-a-bucket-credentials
+  protocol: s3
