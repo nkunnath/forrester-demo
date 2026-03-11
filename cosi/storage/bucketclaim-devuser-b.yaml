@@ -1,0 +1,16 @@
+## Example for a dev user with a separate namespace and bucket claim
+
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: devuser-b
+---
+apiVersion: objectstorage.k8s.io/v1alpha1
+kind: BucketClaim
+metadata:
+  name: devuser-b
+  namespace: devuser-b
+spec:
+  bucketClassName: cosi-nutanix-nkp
+  protocols:
+   - s3
